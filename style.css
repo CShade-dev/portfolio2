@@ -1,0 +1,461 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+p,
+span {
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  display: block;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scrollbar-width: none;
+  background-color: black;
+}
+
+.headerText {
+  font-weight: 600;
+}
+
+.bodyText {
+  font-family: "Source Code Pro", monospace;
+}
+
+.sectionLink:hover,
+.logoLink:hover {
+  color: gray;
+}
+
+#header {
+  width: auto;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  z-index: 7;
+  color: white;
+  mix-blend-mode: difference;
+}
+
+.sectionLink {
+  float: right;
+  cursor: pointer;
+}
+
+.headerText {
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  display: inline;
+}
+
+.logoLink {
+  float: left;
+  cursor: pointer;
+}
+
+#frontPage {
+  width: 100vw;
+  height: 100vh;
+  display: block;
+}
+
+#centerFront {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#centerFrontText {
+  text-align: center;
+  font-size: 3.25em;
+}
+
+#centerFrontSubtext {
+  text-align: center;
+  font-size: 1.25em;
+}
+
+#aboutSection {
+  height: 100vh;
+  width: 100vw;
+}
+
+.sectionBorder {
+  height: 15vh;
+  width: 100vw;
+  background-color: black;
+}
+
+#statsHeader {
+  display: inline-flex;
+  border-top: 15vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.75em;
+  background-color: white;
+}
+
+.top4thumbnail {
+  max-width: 20vw;
+  height: auto;
+}
+
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.top4title {
+  text-decoration: none;
+  font-weight: 500;
+  color: black;
+  font-size: 1.35vw;
+  max-width: 20vw;
+}
+
+.top4views {
+  text-decoration: none;
+  font-weight: 300;
+  color: black;
+  font-size: 1.2vw;
+  display: inline;
+}
+
+#top4 {
+  display: flex;
+}
+
+#views {
+  background-color: white;
+  font-size: 3.5em;
+}
+
+#viewsCaption {
+  background-color: white;
+  display: block;
+  text-align: right;
+}
+
+#aboutSectionHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.viewsContainer {
+  display: flex;
+  margin-top: 10vh;
+  flex-direction: column;
+  align-items: right;
+  margin-right: 5vw;
+}
+
+.viewsContainer * {
+  text-align: right;
+}
+
+.viewsCounter {
+  background-color: white;
+  font-family: "Source Code Pro", monospace;
+  display: inline;
+  font-size: 1.25em;
+}
+
+.white,
+.top4views {
+  background: white;
+}
+
+.top5div {
+  font-size: 0;
+}
+
+.statsAboutText {
+  font-family: "Source Code Pro", monospace;
+  background-color: white;
+  display: inline;
+  font-size: 1.25em;
+}
+
+#videoCount {
+  font-family: "Source Code Pro", monospace;
+}
+
+.statsAboutContainer {
+  margin-left: 5vw;
+  margin-top: 7vh;
+  margin-bottom: 10vh;
+}
+
+#top4v2,
+#top4v3,
+#top4v4 {
+  margin-left: 9vw;
+}
+
+#top4v1 {
+  margin-left: 11vw;
+}
+
+#statsBackground {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  object-fit: cover;
+  opacity: 40%;
+  visibility: hidden;
+}
+
+.videoBackground {
+  background-color: white;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -2;
+}
+
+.projectsSection {
+  width: 100vw;
+  margin-top: 25vh;
+  background-color: black;
+  height: auto;
+}
+
+.project {
+  width: 100vw;
+  background-color: black;
+  height: 25vh;
+  border-top: 2px solid white;
+  cursor: pointer;
+}
+
+.project:last-child {
+  border-bottom: 2px solid white;
+}
+
+#projectsHeader {
+  display: inline-flex;
+  margin-bottom: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.75em;
+  background-color: white;
+}
+
+#projectsSectionHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.projectText {
+  font-size: 4.75em;
+  color: white;
+  white-space: nowrap;
+  overflow-y: hidden;
+  width: fit-content;
+  height: 20vh;
+}
+
+.descText {
+  font-size: 1.15em;
+  margin-left: 1vw;
+  color: white;
+  text-decoration: none;
+  width: fit-content;
+  margin-right: 0;
+}
+
+.filters > div {
+  background-color: white;
+}
+
+.filters {
+  background-color: black;
+  margin-top: 25vh;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vh;
+  height: 10vh;
+}
+
+.filtertoggle {
+  display: inline-flex;
+  margin: auto;
+  cursor: pointer;
+}
+
+.filtertoggle:hover {
+  color: gray;
+}
+
+.filterText {
+  text-align: center;
+  font-size: 1.5em;
+}
+
+#resumeHeader {
+  display: inline-flex;
+  margin-bottom: 10vh;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-size: 3.75em;
+  background-color: white;
+}
+
+.resumeSectionHeader {
+  display: flex;
+  justify-content: center;
+}
+
+.resumeSection {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.arrow {
+  display: inline;
+  float: right;
+  font-size: 4.15em;
+}
+
+.clientHeaderText {
+  font-size: 3.75em;
+  color: black;
+  white-space: nowrap;
+  overflow-y: hidden;
+  width: fit-content;
+  background-color: white;
+}
+
+.clientHeader {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 2px 4px;
+}
+
+.clientBodyText {
+  background-color: white;
+  color: black;
+  width: 40vw;
+  height: fit-content;
+  display: inline;
+  margin-top: 5vh;
+  margin-right: auto;
+  padding: 2px 4px;
+}
+
+.mainVideo {
+  width: 40vw;
+  height: 40vh;
+  margin-top: 5vh;
+  margin-left: auto;
+  margin-right: 5vw;
+}
+
+.clientBodyContainer {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+}
+
+.clientExamplesContainer {
+  display: flex;
+  width: 100vw;
+  margin-top: 8vh;
+}
+
+.displayVideo {
+  width: 20vw;
+  height: 20vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.extraInfoContainer {
+  margin-left: 6.5vw;
+}
+
+.projectLinks {
+  color: white;
+  text-decoration: none;
+}
+
+.projectLinks:hover {
+  color: black;
+  transition: color 1s;
+}
+
+/* Default styles for h1.top4title */
+h1.top4title {
+  font-size: 1.2em;
+}
+
+.footer {
+  width: 100vw;
+  height: 20vh;
+  background-color: black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.social {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  align-items: center;
+  text-decoration: none;
+  height: fit-content;
+  color: black;
+  justify-content: center;
+  font-size: 1.75em;
+  background-color: white;
+  padding: 2px 4px;
+}
+
+.social:hover {
+  color: gray;
+}
+
+.linkedinLink:hover {
+  color: gray;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    font-size: 0.75em;
+  }
+
+  .clientBodyText,
+  .mainVideo {
+    width: unset;
+  }
+}
